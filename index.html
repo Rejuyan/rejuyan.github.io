@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Rejuyanul Hasan | Full-Stack Mobile & Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Md Rejuyanul Hasan - Full-stack mobile and software developer specializing in Flutter, CUDA, and Federated Learning.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- On-screen JavaScript Error Logger Debugger -->
+    <script>
+        window.onerror = function (message, source, lineno, colno, error) {
+            const errDiv = document.createElement('div');
+            errDiv.id = 'debug-error-console';
+            errDiv.style.position = 'fixed';
+            errDiv.style.bottom = '0';
+            errDiv.style.left = '0';
+            errDiv.style.width = '100%';
+            errDiv.style.background = '#ffebee';
+            errDiv.style.color = '#c62828';
+            errDiv.style.padding = '16px';
+            errDiv.style.fontSize = '14px';
+            errDiv.style.fontFamily = 'monospace';
+            errDiv.style.zIndex = '999999';
+            errDiv.style.borderTop = '4px solid #ef5350';
+            errDiv.style.boxShadow = '0 -4px 10px rgba(0,0,0,0.1)';
+            errDiv.style.boxSizing = 'border-box';
+            errDiv.innerHTML = '<strong>JavaScript Error:</strong> ' + message + ' <br><small>Source: ' + source + ' | Line: ' + lineno + ':' + colno + '</small>';
+            document.body.appendChild(errDiv);
+            return false;
+        };
+        window.addEventListener('error', function (e) {
+            if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
+                const errDiv = document.createElement('div');
+                errDiv.style.position = 'fixed';
+                errDiv.style.bottom = '80px';
+                errDiv.style.left = '0';
+                errDiv.style.width = '100%';
+                errDiv.style.background = '#ffebee';
+                errDiv.style.color = '#c62828';
+                errDiv.style.padding = '16px';
+                errDiv.style.fontSize = '14px';
+                errDiv.style.fontFamily = 'monospace';
+                errDiv.style.zIndex = '999999';
+                errDiv.style.borderTop = '4px solid #ef5350';
+                errDiv.innerHTML = '<strong>Resource Load Error:</strong> Failed to load: ' + (e.target.src || e.target.href);
+                document.body.appendChild(errDiv);
+            }
+        }, true);
+    </script>
+</head>
+
+<body class="light-mode">
+    <div class="portfolio-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="brand">
+                    <img src="images/logo.png?v=2" alt="Logo" class="brand-logo">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <nav class="nav-tabs">
+                    <button class="tab-btn active" data-tab="overview">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </button>
+                    <button class="tab-btn" data-tab="about">
+                        <i data-lucide="user"></i>
+                        <span>About Me</span>
+                    </button>
+                    <button class="tab-btn" data-tab="contact">
+                        <i data-lucide="phone"></i>
+                        <span>Contact Me</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <main class="content-area">
+
+            <!-- Section: Home (Welcome & Hero) -->
+            <div id="overview-section" class="tab-content active">
+                <div class="hero-section-clean">
+                    <div class="hero-left-col">
+                        <span class="hero-subtitle">Welcome to my Portfolio!</span>
+                        <h1>Hi, I'm Rejuyan, a<br>Mobile & Software <span class="highlight-copper">Developer.</span>
+                        </h1>
+                        <p class="hero-desc">I am a full-stack mobile and software developer actively working with
+                            Flutter, CUDA, and Federated Learning. I build production-style applications integrated with
+                            Firebase and REST APIs...<a href="#" class="see-more-link" data-tab="about">See More..</a>
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" data-tab="contact">Hire me !</button>
+                            <button class="btn btn-outline" data-tab="about" data-scroll="projects-container">See My
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="hero-right-col">
+                        <div class="profile-image-container">
+                            <img src="images/rejuyan.png" alt="Md Rejuyanul Hasan" class="profile-image-cropped">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: About Me (Bio, Skills, Timeline, Projects) -->
+            <div id="about-section" class="tab-content">
+                <div class="section-layout-wrapper">
+                    <!-- Profile Intro -->
+                    <div class="section-header">
+                        <h1>About Me</h1>
+                        <p class="section-subtitle-text">I am a full-stack mobile and software developer actively
+                            working with Flutter, CUDA, and Federated Learning. I build production-style applications
+                            integrated with Firebase and REST APIs, and have a focused research interest in GPU
+                            computing, privacy-preserving AI, and parallel processing.</p>
+                        <div class="about-actions" style="margin-top: 10px; display: flex; gap: 12px;">
+                            <a href="RejuyanCV.pdf" target="_blank" class="btn btn-primary"
+                                style="text-decoration: none;">
+                                <i data-lucide="eye" style="width: 18px; height: 18px; margin-right: 8px;"></i> View CV
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Flowchart Journey Card -->
+                    <div class="card journey-card">
+                        <div class="card-header">
+                            <div class="header-title-group">
+                                <h2>Academic & Research Journey</h2>
+                                <p class="subtitle">Interactive path of academic checkpoints, milestones, and core
+                                    skills</p>
+                            </div>
+                            <div class="avatar-stack">
+                                <div class="avatar-circle" title="Flutter Dev"><i data-lucide="smartphone"></i></div>
+                                <div class="avatar-circle" title="CUDA/C++ GPU"><i data-lucide="cpu"></i></div>
+                                <div class="avatar-circle" title="Federated Learning"><i data-lucide="network"></i>
+                                </div>
+                                <div class="avatar-count">+5</div>
+                            </div>
+                        </div>
+
+                        <div class="journey-flowchart-container">
+                            <!-- Connection Lines SVG -->
+                            <svg class="journey-lines-svg" id="journey-lines-svg"></svg>
+
+                            <!-- Stage 1 -->
+                            <div class="journey-column">
+                                <div class="column-header-title">Foundations</div>
+                                <div class="journey-node active" id="node-1" data-milestone="1">
+                                    <div class="node-icon"><i data-lucide="book-open"></i></div>
+                                    <div class="node-info">
+                                        <h3>Secondary Education</h3>
+                                        <span class="node-date">Graduated: 2018</span>
+                                    </div>
+                                    <div class="node-status"><i data-lucide="check"></i></div>
+                                </div>
+                                <div class="journey-node" id="node-2" data-milestone="2">
+                                    <div class="node-icon"><i data-lucide="graduation-cap"></i></div>
+                                    <div class="node-info">
+                                        <h3>HSC Education</h3>
+                                        <span class="node-date">Graduated: 2020</span>
+                                    </div>
+                                    <div class="node-status"><i data-lucide="check"></i></div>
+                                </div>
+                            </div>
+
+                            <!-- Stage 2 -->
+                            <div class="journey-column">
+                                <div class="column-header-title">Degree</div>
+                                <div class="journey-node" id="node-3" data-milestone="3">
+                                    <div class="node-icon"><i data-lucide="award"></i></div>
+                                    <div class="node-info">
+                                        <h3>B.Sc. Engg (EdTech)</h3>
+                                        <span class="node-date">2022 - Present</span>
+                                    </div>
+                                    <div class="node-status active-status"><i data-lucide="zap"></i></div>
+                                </div>
+                            </div>
+
+                            <!-- Stage 3 -->
+                            <div class="journey-column">
+                                <div class="column-header-title">Core Deployments</div>
+                                <div class="journey-node" id="node-4" data-milestone="4">
+                                    <div class="node-icon"><i data-lucide="smartphone"></i></div>
+                                    <div class="node-info">
+                                        <h3>Learnify LMS</h3>
+                                        <span class="node-date">Flutter & Firebase</span>
+                                    </div>
+                                    <div class="node-status"><i data-lucide="check"></i></div>
+                                </div>
+                                <div class="journey-node" id="node-5" data-milestone="5">
+                                    <div class="node-icon"><i data-lucide="shopping-bag"></i></div>
+                                    <div class="node-info">
+                                        <h3>eSaudagar Platform</h3>
+                                        <span class="node-date">Flutter & Firebase</span>
+                                    </div>
+                                    <div class="node-status"><i data-lucide="check"></i></div>
+                                </div>
+                            </div>
+
+                            <!-- Detail Card Panel -->
+                            <div class="journey-detail-panel">
+                                <div class="detail-header">
+                                    <div class="detail-badge" id="detail-tag">Schooling</div>
+                                    <h3 id="detail-title">SSC Certificate</h3>
+                                    <span class="detail-duration" id="detail-time">Graduated: 2018</span>
+                                </div>
+                                <div class="detail-body">
+                                    <p id="detail-description">Completed Secondary School Certificate (SSC) at Shamsul
+                                        Haque Khan School and College with a perfect GPA.</p>
+                                    <ul class="detail-highlights" id="detail-bulletpoints">
+                                        <li>GPA: 5.00 / 5.00</li>
+                                        <li>Strong focus on Science, Mathematics, and Computer Fundamentals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Matrix -->
+                    <div class="skills-section-wrapper" style="margin-top: 50px;">
+                        <div class="section-header">
+                            <h2>Technical Competencies & Skills</h2>
+                            <p>Overview of core competencies, technologies, and academic/dev focus.</p>
+                        </div>
+                        <div class="skills-grid-detailed" style="margin-top: 25px;">
+                            <div class="skills-column-box">
+                                <h3><i data-lucide="smartphone" class="box-icon color-frontend"></i> Mobile & Web</h3>
+                                <ul class="detailed-skills-list">
+                                    <li><strong>Flutter & Dart:</strong> Expert in cross-platform development (Android,
+                                        Web), responsive UI, and system configurations.</li>
+                                    <li><strong>Firebase Integration:</strong> Authentication, Firestore databases,
+                                        Cloud Messaging (FCM).</li>
+                                    <li><strong>REST API design:</strong> Structuring endpoint interactions, HTTP codes,
+                                        and payload parsing.</li>
+                                    <li><strong>Python Web Frameworks:</strong> Flask and FastAPI for lightweight API
+                                        deployments.</li>
+                                </ul>
+                            </div>
+                            <div class="skills-column-box">
+                                <h3><i data-lucide="cpu" class="box-icon color-backend"></i> GPU & Languages</h3>
+                                <ul class="detailed-skills-list">
+                                    <li><strong>CUDA Programming:</strong> Developing GPU-accelerated computing &
+                                        parallel processing scripts in C/C++.</li>
+                                    <li><strong>Languages:</strong> Proficient in C, C++, Java, Dart, Python, and
+                                        Bash/Shell scripting.</li>
+                                    <li><strong>Machine Learning:</strong> Framework experience with TensorFlow,
+                                        PyTorch, NumPy, and Pandas.</li>
+                                    <li><strong>Federated Learning:</strong> Implementing privacy-preserving distributed
+                                        ML pipelines (Flower, PySyft).</li>
+                                </ul>
+                            </div>
+                            <div class="skills-column-box">
+                                <h3><i data-lucide="database" class="box-icon color-database"></i> Databases & Tools
+                                </h3>
+                                <ul class="detailed-skills-list">
+                                    <li><strong>Relational DBs:</strong> MySQL schema design, query drafting, indexing,
+                                        and transactional operations.</li>
+                                    <li><strong>NoSQL DBs:</strong> Firebase Firestore document models and real-time
+                                        database management.</li>
+                                    <li><strong>OS Configurations:</strong> Advanced Windows operation; CLI
+                                        administration and virtual machines in Linux (Ubuntu, Kali Linux).</li>
+                                    <li><strong>Tools & IDEs:</strong> Git, GitHub, VS Code, Android Studio, Postman,
+                                        NVIDIA Nsight.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects Gallery -->
+                    <div class="projects-section-wrapper" id="projects-container"
+                        style="margin-top: 50px; padding-top: 20px;">
+                        <div class="section-header">
+                            <h2>Featured Projects</h2>
+                            <p>A look at full-stack systems, mobile client deployments, and parallel processing setups.
+                            </p>
+                        </div>
+                        <div class="projects-grid" style="margin-top: 25px;">
+                            <!-- Project 1 -->
+                            <div class="project-card-interactive">
+                                <div class="project-badge-header">
+                                    <span class="badge badge-accent">Flutter // LMS</span>
+                                    <div class="project-actions-quick">
+                                        <a href="https://github.com/Rejuyan/learnify_app" target="_blank"
+                                            class="proj-icon-link" title="View Codebase"><i
+                                                data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card-body">
+                                    <h3>Learnify Learning Management System</h3>
+                                    <p>A full-featured learning management system (LMS) with student and admin panels.
+                                        Implemented course registration, enrollment management, and educational learning
+                                        material distribution.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="tech-tag-badges">
+                                        <span>Flutter</span>
+                                        <span>Dart</span>
+                                        <span>Firebase Auth</span>
+                                        <span>Firestore</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 2 -->
+                            <div class="project-card-interactive">
+                                <div class="project-badge-header">
+                                    <span class="badge badge-accent">Flutter // E-Commerce</span>
+                                    <div class="project-actions-quick">
+                                        <a href="https://github.com/Rejuyan/eSaudagar" target="_blank"
+                                            class="proj-icon-link" title="View Codebase"><i
+                                                data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card-body">
+                                    <h3>eSaudagar E-Commerce Platform</h3>
+                                    <p>A cross-platform e-commerce application facilitating product browsing, cart
+                                        flows, order placement, secure user checkout, and real-time backend updates.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="tech-tag-badges">
+                                        <span>Flutter</span>
+                                        <span>Dart</span>
+                                        <span>Firebase</span>
+                                        <span>REST API</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 3 -->
+                            <div class="project-card-interactive">
+                                <div class="project-badge-header">
+                                    <span class="badge badge-accent">Flutter // AI & CV</span>
+                                    <div class="project-actions-quick">
+                                        <a href="https://github.com/Rejuyan/AI_Object_Detection" target="_blank"
+                                            class="proj-icon-link" title="View Codebase"><i
+                                                data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card-body">
+                                    <h3>AI Object Detection App</h3>
+                                    <p>A smart mobile application integrating computer vision models for real-time
+                                        object detection and classification using camera streams directly on the mobile
+                                        device.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="tech-tag-badges">
+                                        <span>Flutter</span>
+                                        <span>Dart</span>
+                                        <span>TensorFlow Lite</span>
+                                        <span>Camera API</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 4 -->
+                            <div class="project-card-interactive">
+                                <div class="project-badge-header">
+                                    <span class="badge badge-accent">Flutter // WebRTC</span>
+                                    <div class="project-actions-quick">
+                                        <a href="https://github.com/Rejuyan/Video_Conference_App" target="_blank"
+                                            class="proj-icon-link" title="View Codebase"><i
+                                                data-lucide="github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card-body">
+                                    <h3>Video Conference Application</h3>
+                                    <p>A collaborative application supporting multi-user video meetings, real-time
+                                        high-quality audio/video transmission, and dynamic call state management.</p>
+                                </div>
+                                <div class="project-card-footer">
+                                    <div class="tech-tag-badges">
+                                        <span>Flutter</span>
+                                        <span>Dart</span>
+                                        <span>WebRTC</span>
+                                        <span>Agora SDK</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Contact Me -->
+            <div id="contact-section" class="tab-content">
+                <div class="section-layout-wrapper">
+                    <div class="section-header">
+                        <h1>Get In Touch</h1>
+                        <p>Let's collaborate on software engineering, Flutter mobile apps, or GPU research projects.</p>
+                    </div>
+                    <div class="contact-dual-column">
+                        <div class="contact-info-panel">
+                            <h3>Direct Channels</h3>
+                            <p>Feel free to reach out via email or phone. I'm based in Gazipur/Dhaka, Bangladesh, and
+                                open to remote opportunities globally.</p>
+
+                            <div class="contact-details-list">
+                                <div class="contact-detail-row">
+                                    <div class="contact-row-icon"><i data-lucide="mail"></i></div>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p><a href="mailto:rejuyanul@gmail.com">rejuyanul@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-detail-row">
+                                    <div class="contact-row-icon"><i data-lucide="phone"></i></div>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p><a href="tel:+8801571474334">+8801571474334</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-detail-row">
+                                    <div class="contact-row-icon"><i data-lucide="map-pin"></i></div>
+                                    <div>
+                                        <h4>Location</h4>
+                                        <p>Gazipur, Bangladesh (Dhaka area)</p>
+                                    </div>
+                                </div>
+                                <div class="contact-detail-row">
+                                    <div class="contact-row-icon"><i data-lucide="link"></i></div>
+                                    <div>
+                                        <h4>Profiles</h4>
+                                        <div class="social-links-inline">
+                                            <a href="https://github.com/Rejuyanul-Hasan" class="social-link-btn"
+                                                title="GitHub" target="_blank"><i data-lucide="github"></i> GitHub</a>
+                                            <a href="https://linkedin.com/in/md-rejuyanul-hasan" class="social-link-btn"
+                                                title="LinkedIn" target="_blank"><i data-lucide="linkedin"></i>
+                                                LinkedIn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-side">
+                            <h3>Send Me a Message</h3>
+                            <p class="form-desc-text">Fill in the fields below to send a message directly to my inbox.
+                            </p>
+                            <form id="main-contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="main-name">Your Name</label>
+                                        <input type="text" id="main-name" required placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="main-email">Email Address</label>
+                                        <input type="email" id="main-email" required placeholder="name@domain.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="main-subject">Subject</label>
+                                    <input type="text" id="main-subject" required
+                                        placeholder="Project Proposal / Hiring Inquiry">
+                                </div>
+                                <div class="form-group">
+                                    <label for="main-desc">Details</label>
+                                    <textarea id="main-desc" rows="6" required
+                                        placeholder="Outline your message details here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <span>Send Message</span>
+                                    <i data-lucide="send"></i>
+                                </button>
+                            </form>
+                            <div class="form-success-alert" id="main-form-success">
+                                <i data-lucide="badge-check"></i>
+                                <div>
+                                    <h4>Message Sent Successfully!</h4>
+                                    <p>I will review your message and reply to your email address within 24 business
+                                        hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Script File -->
+    <script src="app.js?v=1.0.1"></script>
+</body>
+
+</html>
